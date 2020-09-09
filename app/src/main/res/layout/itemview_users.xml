@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Leanne Graham"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtv_name"
+            android:text="Email: Sincere@april.biz" />
+        <TextView
+            android:id="@+id/txtv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtv_email"
+            android:text="Phone: 1-770-736-8031 x56442" />
+        <TextView
+            android:id="@+id/txtv_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtv_phone"
+            android:text="Website: hildegard.org" />
+      <TextView
+            android:id="@+id/txtv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtv_website"
+            android:text="Company: Romaguera-Crona" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceAppointmentActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/apa_material_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Place Appointment"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/apa_material_toolbar"
+        android:background="@color/colorBlueLightPlus"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.App.CardView.Rounded"
+                app:cardBackgroundColor="@android:color/white">
+                >
+
+                <RelativeLayout
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/apa_name_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlueTrnsparent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight=".7"
+                            android:text="Patient Name: "
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/apa_edt_name"
+                            style="@style/edittext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_edittext"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="6dp"
+                            android:hint="Enter patient name"
+
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/apa_txtv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/apa_name_layout"
+                        android:layout_marginTop="25dp"
+                        android:text="Choose a schedule..."
+                        android:textColor="@color/colorBlackLight"
+                        android:textSize="16sp" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/apa_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/apa_txtv2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        tools:listitem="@layout/itemview_doctor_schedule" />
+
+                    <TextView
+                        android:id="@+id/apa_txtv_place_appointment"
+                        android:layout_below="@+id/apa_recyclerview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="30dp"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="10dp"
+                        android:text="Place Appointment"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:visibility="gone"
+        android:id="@+id/apa_spin_kit_progressbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SpinKitView.Large.FadingCircle"
+        app:SpinKit_Color="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SetUpProfileActivity"
+    tools:showIn="@layout/activity_sign_up">
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+
+        <EditText
+            android:id="@+id/edt_asu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_24dp"
+            android:hint="Your name"
+
+            android:drawablePadding="5dp"
+            style="@style/edittext"/>
+
+        <EditText
+            android:id="@+id/edt_asu_email"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/edt_asu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="Your email address"
+            android:drawablePadding="5dp"
+            style="@style/edittext"/>
+
+        <EditText
+            android:id="@+id/edt_asu_password"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/edt_asu_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_password_black_24dp"
+            android:hint="Your password"
+            android:drawablePadding="5dp"
+            style="@style/edittext"/>
+
+        <EditText
+            android:id="@+id/edt_asu_repeat_pass"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/edt_asu_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_password_black_24dp"
+            android:hint="Repeat password"
+            style="@style/edittext"
+            android:drawablePadding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_asu_phone_number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edt_asu_repeat_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:inputType="number"
+            android:hint="Your mobile number"
+            android:drawablePadding="5dp"
+            style="@style/edittext"/>
+
+
+
+        <Button
+            android:id="@+id/btn_asu_signup"
+            android:layout_below="@id/edt_asu_phone_number"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlueLight"
+            android:text="Sign up"
+            android:textColor="@android:color/white"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/alay_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.7"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F55"
+                android:baselineAligned="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_copy" />
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_sample"
+                android:gravity="center"
+                >
+
+                <View
+                    android:id="@+id/ap_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/ap_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/ap_imgv1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/otp_verification"
+                        />
+                    <LinearLayout
+                        android:background="@drawable/bg_sample"
+                        android:layout_centerVertical="true"
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/ap_imgv1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/ap_txtv_company_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Something Private Ltd."
+                            android:textColor="#2038E2"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your trusted health care"
+                            android:textSize="14sp"
+                            android:textStyle="italic"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.3"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/ap_txtv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Havn't you done registration? Please sign up..."
+        android:textAlignment="center"
+        android:layout_alignLeft="@+id/ap_lay_1"
+        android:textColor="#2038E2"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ap_lay_1"
+        android:layout_below="@+id/ap_txtv_1"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ap_login"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="#2038E2"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ap_register"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:background="#2038E2"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+</RelativeLayout>
+
+    </LinearLayout>
+
+///////////////////////////////////////
+
+   <!-- <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@color/colorBlueLight"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorBlueLight"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+
+</RelativeLayout>

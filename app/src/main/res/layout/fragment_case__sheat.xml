@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_Case_Sheat"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/fcs_app_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:background="@android:color/white">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/fcs_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorBlueLight"
+                android:background="@color/colorBlueLight"
+                app:layout_anchor="@+id/app_bar"
+                app:layout_anchorGravity="center"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:toolbarId="@+id/toolbar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/fcs_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorBlueLight"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="?attr/homeAsUpIndicator"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginRight="74dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/fcs_txtv_toolbar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Case Sheet"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@android:color/white"
+                    android:layout_gravity="bottom"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/person"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#8D9694"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="0dp"
+                    />
+
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mamunul Islam"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="01705187083"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fcs_recy_case_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

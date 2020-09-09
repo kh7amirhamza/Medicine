@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/iph_txtv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History title something"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/iph_txtv_short_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cases or short description Cases or short description Cases or short description
+Cases or short descri Cases or short description ases or short description "
+            android:textSize="14sp"
+            android:textColor="#3F3E3E"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/iph_txtv_doctor_name_desi_insti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D. Someone, Professor,DMC."
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iph_txtv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="2020-07-21T15:14:57"/>
+    </LinearLayout>
+
+</LinearLayout>

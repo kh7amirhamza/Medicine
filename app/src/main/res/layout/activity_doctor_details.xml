@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorDetailsActivity"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+
+        android:id="@+id/add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Doctor Details"
+
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp">
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+    
+        <ScrollView
+            android:layout_below="@id/add_toolbar"
+            android:id="@+id/add_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_btn_place_appointment"
+           >
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/add_cardview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_weight="1.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/add_imgv_doctor_image"
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:src="@drawable/doctor_a"/>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_weight="2.5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_gravity="center_vertical"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/add_txtv_doctor_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dr. someone"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorPrimaryDark"/>
+
+                                    <TextView
+                                        android:layout_below="@+id/add_txtv_doctor_name"
+                                        android:id="@+id/add_txtv_doctor_category"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cardiology,Medicine"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/colorBlackLight"
+                                        />
+                                    <TextView
+                                        android:layout_below="@+id/add_txtv_doctor_category"
+                                        android:id="@+id/add_txtv_doctor_department"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="MBBS,BCS"
+                                        android:textColor="@color/colorBlackLight"
+                                        android:textSize="12sp"
+                                        />
+                                    <TextView
+                                        android:layout_below="@+id/add_txtv_doctor_department"
+                                        android:id="@+id/add_txtv_doctor_designation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Assistant professor"
+                                        android:textColor="@color/colorBlackLight"
+                                        android:textSize="12sp"
+                                        />
+
+                                    <TextView
+                                        android:layout_below="@+id/add_txtv_doctor_designation"
+                                        android:id="@+id/add_txtv_doctor_institute"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="National Heart Foundation Hospital"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/colorBlackLight"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp">
+                                <com.google.android.material.card.MaterialCardView
+                                    android:id="@+id/add_schedule_cardview_consultaion_fee"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    app:cardBackgroundColor="@android:color/white"
+                                    app:strokeColor="@color/colorPrimaryDark"
+                                    app:strokeWidth="1dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="10dp"
+                                        android:src="@drawable/ic_offer_green_24dp" />
+
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <LinearLayout
+                                    android:layout_toRightOf="@+id/add_schedule_cardview_consultaion_fee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Consultation Fee"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textStyle="bold"
+                                        />
+                                    <TextView
+                                        android:id="@+id/add_txtv_consultation_fee"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@android:color/black"
+                                        android:text="৳1000.00"
+                                        android:drawablePadding="5dp"
+                                        android:textAlignment="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:drawableRight="@drawable/ic_info_outline_black_24dp"/>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Other Details"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"/>
+
+                            <TextView
+                                android:id="@+id/add_txtv_doctor_other_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorBlackLight"
+                                android:text="@string/doctor_other_details_demo"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/add_Linear_layout"
+                    android:layout_below="@+id/add_cardview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Available Hour"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/add_recy_doctor_schedule"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:listitem="@layout/itemview_doctor_schedule"
+                      />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_btn_place_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to appointment"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"/>
+
+</RelativeLayout>

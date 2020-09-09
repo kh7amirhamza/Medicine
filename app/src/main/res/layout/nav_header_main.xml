@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingTop="16dp"
+    android:paddingRight="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/drawerPprofileID"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:elevation="2dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="3dp"
+           />
+
+        <TextView
+            android:id="@+id/drawerNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/nav_header_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_below="@+id/drawerPprofileID" />
+
+        <TextView
+            android:id="@+id/drawerMobileID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_header_subtitle"
+            android:textColor="@color/colorBlackLight"
+            android:textSize="12sp"
+            android:layout_below="@+id/drawerNameID" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawer_button_back"
+            android:drawableLeft="@drawable/ic_like"
+            android:drawablePadding="4dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="১০০%"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/nav_header_txtv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_horizontal"
+            android:text=" Edit "
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_below="@+id/drawerMobileID" />
+
+</RelativeLayout>

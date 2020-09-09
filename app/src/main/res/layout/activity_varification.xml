@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Varification">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_smartphone"
+                >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ভেরিফিকেশন"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="এসএমএস এর মাধ্যমে আপনি একটি\nOTP কোড পাবেন "
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlack"/>
+
+            <EditText
+                android:id="@+id/varificationOTPID"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/varification_otp_back"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:hint="OTP Code"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:inputType="numberPassword"
+                android:layout_marginTop="50dp"/>
+
+            <Button
+                android:id="@+id/varificationBtnID"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="ভেরিফাই"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:textColor="#979797"
+                android:enabled="false"
+                android:background="@drawable/varification_otp_btn_back"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ভেরিফিকেশন কোড সেন্ড হয় নি?"
+                    android:textColor="#979797"/>
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/varificationCodeResendID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="আবার চেষ্টা করুন"
+                    android:textColor="#4286F5"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

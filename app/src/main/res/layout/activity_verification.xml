@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".GetPhoneNumberToVerifyActivity"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+        <ImageView
+            android:id="@+id/imgv_otp_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/otp_verification"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtv1"
+            android:layout_below="@+id/imgv_otp_icon"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"/>
+
+       <RelativeLayout
+           android:id="@+id/lay_4"
+           android:layout_below="@+id/txtv1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center_horizontal">
+               <LinearLayout
+                   android:id="@+id/lay_1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:gravity="center">
+
+                   <TextView
+                       android:id="@+id/txtv2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="We sent OTP to "
+                       android:textAlignment="center"
+                       android:textSize="16sp" />
+
+                   <TextView
+                       android:id="@+id/txtv3"
+                       android:textSize="16sp"
+                       android:textColor="@android:color/black"
+                       android:text="+8801705187083"
+                       android:textAlignment="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+               <TextView
+                   android:id="@+id/txtv4"
+                   android:layout_below="@+id/lay_1"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="16sp"
+                   android:text="Check your mobile"
+                   android:textAlignment="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+
+           <Button
+               android:visibility="gone"
+               android:id="@+id/btn_resend_code"
+               android:layout_marginTop="20dp"
+               android:text="Resend Code"
+               android:layout_centerInParent="true"
+               android:layout_width="match_parent"
+               android:layout_marginLeft="50dp"
+               android:layout_marginRight="50dp"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/white"
+               android:textSize="16sp"
+               android:background="@drawable/bg_get_otp"
+               />
+       </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/lay_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_4"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/txtv5"
+                android:textSize="16sp"
+                android:text="Enter the OTP"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+          <!--  <TextView
+                android:id="@+id/txtv6"
+                android:textSize="16sp"
+                android:text="+8801705187083"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_3"
+            android:gravity="center">
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinview"
+                app:pinWidth="40dp"
+                app:pinHeight="40dp"
+                app:pinLength="5"
+                app:cursorVisible="true"
+                app:forceKeyboard="false"
+                app:hint="0"
+                app:inputType="number"
+                app:password="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_verify_otp"
+            android:layout_marginTop="20dp"
+            android:text="Verify OTP"
+            android:layout_below="@+id/lay_2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="@drawable/bg_get_otp"
+            />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:visibility="gone"
+            android:id="@+id/av_spin_kit_progressbar"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SpinKitView.Large.FadingCircle"
+            app:SpinKit_Color="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

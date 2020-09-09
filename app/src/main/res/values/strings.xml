@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Medicine</string>
+
+    <string name="give_number_text">আপনার মোবাইল নাম্বার</string>
+    <string name="toolbar_text">ট্রাক লাগবে</string>
+    <string name="number_hint">মোবাইল নাম্বার প্রবেশ করান</string>
+    <string name="go_ahead">এগিয়ে যান</string>
+    <string name="info1">এগিয়ে যাওয়া দ্বারা আপনি আমাদের </string>
+    <string name="info2">ব্যবহারের শর্তাবলী </string>
+    <string name="info3">এবং </string>
+    <string name="info4">গোপনীয়তা মেনে নিচ্ছেন।</string>
+    <string name="app__name">ট্রাক ভাড়ার\n১ নম্বর অ্যাপ</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">আব্দুল্লাহ মাসুদ</string>
+    <string name="nav_header_subtitle">01709347512</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_title">হোম</string>
+    <string name="help_title">সাহায্য</string>
+    <string name="settings_title">সেটিংস</string>
+    <string name="discount_title">ডিসকাউন্ট</string>
+    <string name="trip_history_title">ট্রিপ হিস্টরি</string>
+
+    <string name="menu_home">চলতি ট্রিপ</string>
+    <string name="menu_trip_history">ট্রিপ হিস্টরি</string>
+    <string name="menu_discount">ডিসকাউন্ট</string>
+    <string name="menu_settings">সেটিংস</string>
+    <string name="menu_help">সাহায্য</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Doctors Details String -->
+    <string name="dr_kaji_eduQulification">MBBS (Sir Salimullah Medical College and Mitford Hospital),\n
+FCPS (Medicine)\n
+MRCP (England)\n
+MD(Cardiology, BSMMU, PG Hospital, Dhaka)
+</string>
+
+    <string name="drKaji_institute">National Institute of Cardiovascular Deseases and Kuwait Bangladesh Friendship Government Hospital</string>
+
+    <string name="drSadi_edu_qualification">MBBS(SZMCH),CCD (BIRDEM),PGT(Medicine,Gastroenterology)</string>
+
+
+    <string name="otp_condition">
+        We will send an one time <b>verirification code</b> \n on this mobile number
+    </string>
+
+
+    <string name="sample_token">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmUzYWYyMDAyYzc0N2EzNjlmZTM3NTZmYjVjYzcwMDlkYTdmMmZkZjAwNGJmZWFlZjM2NDQyOGFiMWQwOWYxMTIxOTg3MmRiMmQyMWU4OWUiLCJpYXQiOjE1OTQ1NDg4MjgsIm5iZiI6MTU5NDU0ODgyOCwiZXhwIjoxNjI2MDg0ODI4LCJzdWIiOiI1MSIsInNjb3BlcyI6W119.c7Xa0fvlztLQqZg9nOX1HvLKSpQEL-qrABFgxm3Ocg1IPsvAwpp6UlVNrxDOLuwxTl6NAAhN9X07VklJyYJR4ws-j-lb3OnJw5430lRU4AnuDgXfJ9lz6222-oSWrYLqQZjI-CU0gb7QbLFkbl1Ot4XP-9y1cPNL8XUId-CtOCGn-p4vGpTgDaQEUmWFy2BoyoJpUkPymvTCi6YadbCHb-lxODFqchY7CDsCDCRgV8RcaPSAE3KCK65kgJq4ORTbp9S3k1Hi2vYld_MkWX-kTJ6ZbwS2d-Iuf9gT7_xkXF6h-CLfyTs72b75dhRj7RNq5CF4MKY3YSKohBgFDAu0CnojCBzgk0eaCa0ilSwX33rWSp8Xim8P4lVHj8Ij6kMUpwnKhLDILgdUlbLAIadXvd8xV6SJecXAB2mT4rWWIH7C2D8nlYhzzOkppgJAhAnlSoCJ7HYN1UtxYeGL2F2NQQA_hVZeRAAyN_GsOJom0IJS6opnKltmJz7yt6la0jCoT_joe8CLdaoFt_JGPrXtuZ1GaXL7igrEg754zit900y5PpEz_WtpHTU5oJoLG8FMdlWxbrKXoBvewai9F6SprXJUBValLk8dXN8MjxJM8pxZ7gBZ7w1N1g57xTrin3gRw8Be3nAokGD_FlRPsX9jkX9cbMrp1vLATnWE84ht_Vs</string>
+    <string name="sample_token_doctor">Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjc2YzM5Njc3OTI5ZjEzODc3MmVhNmY0MmQyNGRkMGUzMWE4NGQwNTAyMDllMWZjOTk3YTRlOWJhOTY1MDk3MzdjZTkwN2U5YzdlMTkyZDMiLCJpYXQiOjE1OTQ1NDY3MjQsIm5iZiI6MTU5NDU0NjcyNCwiZXhwIjoxNjI2MDgyNzI0LCJzdWIiOiI1MCIsInNjb3BlcyI6W119.oG9V6L24BiYDE04bXhQKomlrfYHE1ROsW4ixNCaA7-fFP8O-NDI3P0YqwHDkNzAcLqz4pVZJrzJHR0kBUgY8WeT_PV3ScR56VTLluAGtAO40r34WRQEDnCGPnOPlMPOvAGCax2rxb4k2WuDxuqSVgXqUK2JerN7l9oWDDJDcB4Jpq1Bsfse_1ol8l_6NBZceGnfHyZSvrfuhq1ZbYwyiP55_I_kYC4Au6DQd01Bhf0pugwHW9cQR0gKJ7vWMFTP71aIo7uDPrAsH4XStDscdn6Qi3cZ2BPqqYRAU7c6KuQNWsCgn4v7JY0dahnxxFS00Si3PU4pBal7rqfJ9_qyEiHa-Yv7cSNffY-ViSA8YOs9zqCtbkpFrFN6J_djeTRBoqz70UBtbai9yeAX8_EtoUpGtzMkyTcn7p8LGeU1LATnGLwuvPqThZoxp3kjX81M-cfo8JII50lmpJ60M6AY7wywhAwjS-4Ce-BUlhPOXcxNdmeHSxNh4xcbiVnHlqAuTL2h1ovA0PX0za1FWrZ-uS6MCsQ3d1kMDJRJnN_VSTJJzcbQo6YXKUajPjAy8EbHrc_X8kGM7WW0BYCpY-oKCfma1MXjgwSpwBqNtGTmHORc9mYpPhDodIc34LU2WVGpu1eAqxIwC0MlCk3UvaILLHgAWfE3V0mvpenZj0v6k0s0</string>
+    <string name="no_internet">No Internet</string>
+
+    <string name="doctor_other_details_demo">Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware.</string>
+</resources>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/f_my_appointments_s_swiperefreshlayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".MyAppointmentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                style="@style/Widget.App.CardView.Rounded"
+                android:layout_margin="10dp"
+                app:strokeWidth="1dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/fma_txtv_upcomming"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Up comming"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorGreen"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/fma_txtv_past"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Past"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ScrollView
+                android:id="@+id/fma_upcomming_layout_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Patient Name: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Appo. Day: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_appo_day"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Appo. Date: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_appo_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Start time: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_appo_start_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="End time: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_end_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Doctor Gender: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_doctor_gender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Location: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_doctor_location"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Institute: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_doctor_institute"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/colorBlueTrnsparentLight"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+                            android:padding="10dp"
+                            android:text="Department: "
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fas_doctor_department"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".6"
+                            android:padding="10dp"
+                            android:text="..."
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/fas_finish_appointment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/colorPrimary"
+                        android:text="Finish Appointment"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fma_past_layout_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/f_my_appo_spin_kit_progressbar"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SpinKitView.Large.FadingCircle"
+            app:SpinKit_Color="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:scaleX=".7"
+            android:scaleY=".7"
+            />
+    </RelativeLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

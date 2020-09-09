@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:elevation="3dp"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="55dp"
+            android:id="@+id/homePersonProfileID"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#979797"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="স্বাগতম"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/homePersonNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abdullah masud"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="#21945B"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:id="@+id/homeTripRecylerID"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/homeNoTripLayoutID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_loc_loc"
+            android:tint="#979797" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="এখন আপনার কোন ট্রিপ নেই"
+            android:textColor="#979797"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

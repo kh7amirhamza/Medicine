@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPatientDetailsActivity"
+    android:background="@android:color/white">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/aepd_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Edit Patient Details"
+     />
+
+    <ScrollView
+        android:layout_below="@+id/aepd_toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/person"
+                app:civ_border_color="#8D9694"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlueTrnsparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".7"
+                        android:text="Address: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/aepd_edt_address"
+                        style="@style/edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="6dp"
+                        android:text="dfgd"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBlueTrnsparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".7"
+                        android:text="Gender: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/aepd_radioBtn_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Male" />
+
+                        <RadioButton
+                            android:id="@+id/aepd_radioBtn_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBlueTrnsparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".7"
+                        android:text="Location: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/aepd_edt_location"
+                        style="@style/edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBlueTrnsparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".7"
+                        android:text="Age: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/aepd_edt_age"
+                        style="@style/edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="6dp"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBlueTrnsparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".7"
+                        android:text="Date of birth: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/aepd_txtv_date_of_birth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="Set date"
+                        android:textColor="@color/colorBlueDark"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorBlueTrnsparent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                >
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".7"
+                        android:text="Marital Status: "
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/aepd_radioBtn_married"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Married"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/aepd_radioBtn_unmarried"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Unmarried"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_border_shadow"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlueTrnsparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Family diseasis history:  "
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/aepd_txtv_add_family_dises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="Add"
+                            android:textColor="@color/colorBlueDark"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/aepd_recy_family_diseasis_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="10dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_border_shadow"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlueTrnsparent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="5dp"
+                            android:text="Previous diseasis history:  "
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/aepd_txtv_add_previous_dises"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:text="Add"
+                            android:textColor="@color/colorBlueDark"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/aepd_recy_previous_diseasis_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="10dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/aepd_txtv_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_button"
+                    android:padding="5dp"
+                    android:text="Save"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:visibility="gone"
+        android:id="@+id/aepd_spin_kit_progressbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SpinKitView.Large.FadingCircle"
+        app:SpinKit_Color="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        />
+
+
+</RelativeLayout>

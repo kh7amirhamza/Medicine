@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_btm_nav_case_sheat"
+        android:enabled="true"
+        android:icon="@drawable/ic_caseshet_black_24dp"
+        android:title="Case Sheat"/>
+    <item
+        android:id="@+id/menu_btm_nav_book_appointment"
+        android:enabled="true"
+        android:icon="@drawable/ic_book_appoinment_black_24dp"
+        android:title="Book Appoinment"/>
+    <item
+        android:id="@+id/menu_btm_nav_cancel_appointment"
+        android:enabled="true"
+        android:icon="@drawable/ic_cancel_black_24dp"
+        android:title="Cancel Appointment"/>
+    <item
+        android:id="@+id/menu_btm_nav_lab_report"
+        android:enabled="true"
+        android:icon="@drawable/ic_lab_report_black_24dp"
+        android:title="Lab Report"/>
+</menu>

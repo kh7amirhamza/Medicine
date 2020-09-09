@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:background="@color/colorBlueLight">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/al_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlueLight"
+        app:layout_collapseMode="pin"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="74dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_below="@+id/al_toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:clickable="true"
+       android:focusable="true"
+       android:checkable="true"
+       android:background="@android:color/white"
+       style="@style/Widget.App.CardView"
+       >
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:paddingLeft="30dp"
+               android:paddingRight="30dp"
+               >
+
+
+               <ImageView
+                   android:id="@+id/al_imageview1"
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginBottom="30dp"
+                   android:src="@drawable/login_image" />
+
+               <com.google.android.material.textfield.TextInputLayout
+
+                   android:id="@+id/ali_til_email"
+                   style="@style/Widget.Shrine.TextInputLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/al_imageview1"
+                   android:layout_marginTop="15dp"
+                   android:hint="Email Address"
+                   app:boxStrokeColor="@color/colorBlueDark"
+                   app:boxStrokeWidth="1dp"
+                   app:boxStrokeWidthFocused="2dp"
+                   app:endIconMode="clear_text"
+                   app:startIconDrawable="@drawable/ic_email_black_24dp">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/ali_tiedt_email"
+                       style="@style/edittext"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="p@gmail.com"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:id="@+id/ali_til_password"
+                   style="@style/Widget.Shrine.TextInputLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/ali_til_email"
+                   android:layout_marginTop="15dp"
+                   android:hint="Password"
+                   app:boxStrokeColor="@color/colorBlueDark"
+                   app:boxStrokeWidth="1dp"
+                   app:boxStrokeWidthFocused="2dp"
+                   app:endIconMode="password_toggle"
+                   app:startIconDrawable="@drawable/ic_password_black_24dp">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/ali_tiedt_password"
+                       style="@style/edittext"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:inputType="textPassword"
+                       android:text="p"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+               <!--<EditText
+                   android:id="@+id/edt_ali_email"
+                   style="@style/edittext"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/al_imageview1"
+                   android:layout_marginTop="15dp"
+                   android:drawableLeft="@drawable/ic_email_black_24dp"
+                   android:drawablePadding="5dp"
+                   android:text="shadiqurshaon@gmail.com"
+                   android:hint="Your email address" />-->
+
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/ali_til_password"
+                   android:layout_marginTop="70dp">
+
+                   <Button
+                       android:id="@+id/btn_ali_login"
+                       style="@style/Widget.App.Button"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Log in"
+                       android:textAllCaps="false"
+                       android:textSize="16sp"
+                       android:textColor="@android:color/white" />
+               </FrameLayout>
+
+
+           </RelativeLayout>
+       </androidx.core.widget.NestedScrollView>
+   </com.google.android.material.card.MaterialCardView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:visibility="gone"
+        android:id="@+id/al_spin_kit_progressbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SpinKitView.Large.FadingCircle"
+        app:SpinKit_Color="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        />
+
+
+</RelativeLayout>

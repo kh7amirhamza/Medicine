@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/colorBlueTrnsparent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".7"
+            android:text="Schedul day: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dadc_edt_schedule_day"
+            style="@style/edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/colorBlueTrnsparent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".7"
+            android:text="Start Time: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dadc_edt_start_time"
+            style="@style/edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="16sp" />
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/colorBlueTrnsparent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".7"
+            android:text="End time: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dadc_edt_end_time"
+            style="@style/edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:paddingBottom="6dp"
+            android:textSize="16sp" />
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/colorBlueTrnsparent"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".7"
+            android:text="Status: "
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dadc_edt_status"
+            style="@style/edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dadc_txtv_add"
+        android:layout_marginTop="20dp"
+        android:text="Add to Schedule"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="#3E67F7"/>
+
+</LinearLayout>

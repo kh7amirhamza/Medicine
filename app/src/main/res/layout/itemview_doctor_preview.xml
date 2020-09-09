@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_dp_doctor_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/doctor_a"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/iv_dp_doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. someone"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_below="@+id/iv_dp_doctor_name"
+                android:id="@+id/iv_dp_doctor_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cardiology,Medicine"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackLight"
+                />
+            <TextView
+                android:layout_below="@+id/iv_dp_doctor_category"
+                android:id="@+id/iv_dp_doctor_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MBBS,BCS"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackLight"
+                />
+            <TextView
+                android:layout_below="@+id/iv_dp_doctor_department"
+                android:id="@+id/iv_dp_doctor_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assistant professor"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackLight"
+                />
+
+            <TextView
+                android:layout_below="@+id/iv_dp_doctor_designation"
+                android:id="@+id/iv_dp_doctor_institute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="National Heart Foundation Hospital"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlackLight"
+                />
+
+            <TextView
+                android:layout_below="@+id/iv_dp_doctor_institute"
+                android:id="@+id/iv_dp_doctor_consultation_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultation Fee- ৳500"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.App.CardView.Rounded"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="0dp"
+       android:layout_marginRight="10dp">
+
+       <com.google.android.material.card.MaterialCardView
+           android:id="@+id/dp_cardview1"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           app:cardCornerRadius="10dp"
+          >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/bg_home"
+               >
+               <ImageView
+                   android:id="@+id/dp_imgv_speaciali_icon"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/doctor6"/>
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <LinearLayout
+           android:layout_toRightOf="@+id/dp_cardview1"
+           android:layout_centerVertical="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/dp_txtv_doctor_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:text="Dr. Mohiuddin"
+               android:textSize="16sp"
+               android:textColor="@android:color/black"
+               />
+           <TextView
+               android:id="@+id/dp_txtv_speaciali_in"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:text="Cardiologist"
+               android:textSize="14sp"
+               android:textColor="@color/colorUnchecked"
+               />
+           <TextView
+               android:id="@+id/dp_txtv_work_place"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:text="Sheba Medical Hall,Dhaka"
+               android:textSize="14sp"
+               android:textColor="@color/colorUnchecked"
+               />
+       </LinearLayout>
+
+
+       <ImageView
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="0dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_arrow_right_black_24dp"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#B0B0B8"
+           android:layout_below="@id/dp_cardview1"
+           android:layout_marginTop="5dp"
+           />
+   </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>-->

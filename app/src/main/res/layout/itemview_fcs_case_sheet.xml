@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fcs_cardview1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_home">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_caseshet_black_24dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/fcs_cardview1"
+        android:layout_toLeftOf="@+id/iv_fcs_imgv_1"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fcs_txtv_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor: Mohiuddin"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/fcs_imgv_date"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_date_range_black_24dp"/>
+
+            <TextView
+                android:id="@+id/fcs_txtv_date"
+                android:layout_toRightOf="@id/fcs_imgv_date"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="22-jun-2020"/>
+
+            <ImageView
+                android:id="@+id/fcs_imgv_time"
+                android:layout_toRightOf="@id/fcs_txtv_date"
+                android:layout_marginLeft="10dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_time_black_24dp"/>
+
+            <TextView
+                android:id="@+id/fcs_txtv_time"
+                android:layout_toRightOf="@+id/fcs_imgv_time"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="10:58 AM"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_fcs_imgv_1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right_black_24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B0B0B8"
+        android:layout_below="@id/fcs_cardview1"/>
+</RelativeLayout>
